@@ -169,6 +169,7 @@ main {
   text-align: left;
   background-color: black;
   padding: 1rem 0.5rem 0.5rem 0.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .servicios article p{
   width: 100%;
@@ -211,13 +212,13 @@ video{
 
 
 .gym{
-  background-color: black;
-  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.918);
+  padding: 1.2rem;
   border-radius: 0.5rem;
   margin: 2rem auto;
   width: 100%;
   color: white;
-  font-family: Anton;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .gym p{
@@ -464,11 +465,12 @@ main section {
   height: 1rem;
 }
 /*FORMULARIOS*/
-select::placeholder,textarea::placeholder,input::placeholder{
+select::placeholder, textarea::placeholder, input::placeholder {
   font-family: Anton;
   color: #888484;
 }
-.formularioLogin{
+
+.formularioLogin {
   margin: 0 auto;
   width: 26rem;
   padding: 2rem;
@@ -481,37 +483,61 @@ select::placeholder,textarea::placeholder,input::placeholder{
   border-radius: 1.5rem;
 }
 
-.formularioLogin .inputForm input{
+.inputForm {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.formularioLogin .inputForm input {
   width: 18rem;
   height: 2.5rem;
-  margin: 0.5rem;
   margin: 0.8rem;
   border: none;
   border-bottom: 2px solid #cc941a;
   background: transparent;
   color: black;
   padding-left: 0.5rem;
-  font-size: 1rem;  
+  font-size: 1rem;
   outline: none;
 }
-.formularioLogin input[type="submit"]{
-  margin: 1rem;
+
+.inputForm label {
+  position: absolute;
+  left: 1.3rem;
+  top: 1.5rem;
+  color: #888484;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.inputForm label.active {
+  top: -0.2rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: #cc941a;
+}
+
+.formularioLogin input[type="submit"] {
+  margin: 1rem auto;
   width: 18rem;
   height: 2.5rem;
   border: none;
   font-size: 1rem;
-  background-color:#cc941a ;
+  background-color: #cc941a;
   font-family: Anton;
   border-radius: 20px;
-  margin: 0 auto;
   color: white;
+  cursor: pointer;
 }
-.formularioLogin input[type="checkbox"]{
+
+.formularioLogin input[type="checkbox"] {
   width: 1rem;
   height: 1rem;
   cursor: pointer;
 }
-.recordarCheckbox{
+
+.recordarCheckbox {
   display: flex;
   align-items: center;
   gap: 0.1rem;
@@ -738,7 +764,8 @@ div#volverarriba > a{
     margin: 2rem auto;
     width: 100%;
     color: white;
-    font-family: Anton;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     font-size: 1.3rem;
   }
   
@@ -1016,7 +1043,8 @@ div#volverarriba > a{
     margin: 2rem auto;
     width: 100%;
     color: white;
-    font-family: Anton;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     font-size: 1.35rem;
   }
   

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap">
+  <style>
+    select::placeholder,textarea::placeholder,input::placeholder{
+      font-family: Anton;
+      color: #888484;
+    }
+    .formularioLogin{
+      margin: 0 auto;
+      width: 26rem;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: white;
+      border-radius: 1.5rem;
+    }
+
+    .formularioLogin .inputForm {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .formularioLogin .inputForm input {
+      width: 18rem;
+      height: 2.5rem;
+      border: none;
+      border-bottom: 2px solid #cc941a;
+      background: transparent;
+      color: black;
+      padding-left: 0.5rem;
+      font-size: 1rem;
+      outline: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .formularioLogin .inputForm label {
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888484;
+      transition: 0.3s;
+      pointer-events: none;
+      font-size: 1rem;
+    }
+
+    .formularioLogin .inputForm input:focus + label,
+    .formularioLogin .inputForm input:not(:placeholder-shown) + label {
+      top: -0.7rem;
+      font-size: 0.8rem;
+      color: #cc941a;
+    }
+
+    .formularioLogin input[type="submit"] {
+      margin: 1rem;
+      width: 18rem;
+      height: 2.5rem;
+      border: none;
+      font-size: 1rem;
+      background-color: #cc941a;
+      font-family: Anton;
+      border-radius: 20px;
+      margin: 0 auto;
+      color: white;
+      cursor: pointer;
+    }
+
+    .recordarCheckbox {
+      display: flex;
+      align-items: center;
+      gap: 0.1rem;
+      font-size: 1rem;
+      color: black;
+      margin: 1rem;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(function() {
+      $('.inputForm input').each(function() {
+        if ($(this).val() !== "") {
+          $(this).siblings('.placeholder').addClass('active');
+        }
+      });
+
+      $('.inputForm input').on('focus', function() {
+        $(this).siblings('label').addClass('active');
+      });
+
+      $('.inputForm input').on('blur', function() {
+        if ($(this).val() === "") {
+          $(this).siblings('label').removeClass('active');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <form action="#" method="POST" class="formularioLogin">
+    <div class="inputForm">
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+        maxlength="25"
+        pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+        placeholder=" "
+      />
+      <label class="placeholder" for="nombre">Escribe tu nombre</label>
+    </div>
+
+    <div class="inputForm">
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        maxlength="25"
+        title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+        placeholder=" "
+      />
+      <label class="placeholder" for="password">Escribe tu contraseña</label>
+    </div>
+
+    <div class="recordarCheckbox">
+      <input type="checkbox" id="recordar" name="recordar" checked>
+      <label for="recordar">Guardar credenciales de sesión</label>
+    </div>
+
+    <input type="submit" value="INICIAR SESIÓN" />
+  </form>
+</body>
+</html>

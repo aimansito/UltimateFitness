@@ -63,7 +63,6 @@
           <ul>
             <li><a href="../html/iniciarSesion.html">INICIAR SESIÓN</a></li>
             <li><a href="../html/crearCuenta.html">CREAR CUENTA</a></li>
-            <li><a href="#">CERRAR SESIÓN</a></li>
           </ul>
         </div>
       </nav>
@@ -71,41 +70,38 @@
     <!-- Parte principal de la página-->
     <main>
       <h2 class="tituloPagina">INICIAR SESIÓN</h2>
-
       <form action="#" method="POST" class="formularioLogin">
         <div class="inputForm">
-          <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          required
-          autofocus
-          maxlength="25"
-          pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
-          title="Inserte su nombre"
-          placeholder="Escribe tu nombre"
-        />
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                autofocus
+                maxlength="25"
+                pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+                title="Inserte su nombre"
+            />
+            <label for="nombre">Escribe tu nombre</label>
         </div>
         <div class="inputForm">
-          <input
-          type="password"
-          id="password"
-          name="password"
-          required
-          maxlength="25"
-          title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
-          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-          placeholder="Escribe tu contraseña"
-        />
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                maxlength="25"
+                title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            />
+            <label for="password">Escribe tu contraseña</label>
         </div>
-
         <div class="recordarCheckbox">
-          <input type="checkbox" id="recordar" name="recordar" checked>
-          <label for="recordar">Guardar credenciales de sesión</label>
+            <input type="checkbox" id="recordar" name="recordar" checked>
+            <label for="recordar">Guardar credenciales de sesión</label>
         </div>
-
         <input type="submit" value="INICIAR SESIÓN" />
-      </form>
+    </form>
       <p class="textoForm">
         <a href="olvidarContraseña.html">¿Has olvidado tu contraseña?</a>
       </p>

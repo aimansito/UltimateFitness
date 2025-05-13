@@ -109,3 +109,21 @@ $(function () {
         $("html, body").stop().animate({ scrollTop: 0 }, 500);
     });
 }); 
+
+$(function() {
+    $('.inputForm input').each(function() {
+        if ($(this).val().trim() !== '') {
+            $(this).siblings('label').addClass('active');
+        }
+    });
+    
+    $('.inputForm input').on('focus', function() {
+        $(this).siblings('label').addClass('active');
+    });
+    
+    $('.inputForm input').on('blur', function() {
+        if ($(this).val().trim() === '') {
+            $(this).siblings('label').removeClass('active');
+        }
+    });
+});
