@@ -128,3 +128,6 @@ $(function() {
         }
     });
 });
+
+// funcion para error de formularios 
+  

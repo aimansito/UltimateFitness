@@ -94,13 +94,13 @@
               id="nombre"
               name="nombre"
               required
+              autofocus
               maxlength="25"
               pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
               title="Inserte su nombre"
-              placeholder="Escribe tu nombre"
             />
+            <label for="nombre">Escribe tu nombre</label>
           </div>
-
           <div class="inputForm">
             <input
               type="email"
@@ -109,35 +109,31 @@
               required
               maxlength="50"
               title="Inserte un correo electrónico válido"
-              placeholder="Escribe tu correo electrónico"
             />
+            <label for="email">Escribe tu correo electrónico</label>
           </div>
-
           <div class="inputForm">
             <input
               type="text"
               id="asunto"
               name="asunto"
               maxlength="50"
-              placeholder="Asunto"
             />
+            <label for="asunto">Asunto</label>
           </div>
-
           <div class="inputForm">
             <textarea
               id="comentarios"
               name="comentarios"
               rows="4"
               maxlength="300"
-              placeholder="Dejános saber los deportes que prácticas"
             ></textarea>
+            <label for="comentarios">Dejános saber los deportes que prácticas</label>
           </div>
-
           <div class="recordarCheckbox">
             <input type="checkbox" id="terminos" name="terminos" required />
             <label for="terminos">Acepto los términos y condiciones</label>
           </div>
-
           <input type="submit" value="ENVIAR" />
         </form>
       </section>
