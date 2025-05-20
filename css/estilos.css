@@ -211,7 +211,7 @@ video{
 /*GYM TRAINING*/
 
 
-.gym{
+section.gym article p{
   background-color: rgba(0, 0, 0, 0.918);
   padding: 1.2rem;
   border-radius: 0.5rem;
@@ -219,10 +219,12 @@ video{
   width: 100%;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
-.gym p{
+section.gym article {
   padding: 0.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .gym strong{
@@ -560,6 +562,7 @@ select::placeholder, textarea::placeholder, input::placeholder {
   padding: 0.5rem;
   border: 2px solid #cc941a;
   border-radius: 10px;
+  width: 18rem;
 }
 
 #comentarios{
@@ -569,6 +572,8 @@ select::placeholder, textarea::placeholder, input::placeholder {
   padding: 0.5rem;
   border: 2px solid #cc941a;
   border-radius: 10px;
+  resize: none;
+  width: 18rem;
 }
 
 /*FOOTER*/
@@ -757,7 +762,7 @@ div#volverarriba > a{
   }
 
   /*GYM TRAINING*/
-  .gym{
+  section.gym {
     background-color: black;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -765,13 +770,14 @@ div#volverarriba > a{
     width: 100%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
     font-size: 1.3rem;
   }
   
-  .gym p{
+  section.gym article p{
     padding: 0.5rem;
     font-size: 1.3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
   }
   
   .gym strong{
@@ -1044,7 +1050,6 @@ div#volverarriba > a{
     width: 100%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: bold;
     font-size: 1.35rem;
   }
   

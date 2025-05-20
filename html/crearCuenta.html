@@ -72,103 +72,104 @@
       <h2 class="tituloPagina">CREAR CUENTA</h2>
 
       <form action="#" method="POST" class="formularioLogin">
-        <div class="inputForm">
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            required
-            autofocus
-            maxlength="25"
-            pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
-            title="Inserte su nombre"
-            placeholder="Escribe tu nombre"
-          />
-        </div>
+    <div class="inputForm">
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        required
+        autofocus
+        maxlength="25"
+        pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+        title="Inserte su nombre"
+      />
+      <label for="nombre">Escribe tu nombre</label>
+    </div>
 
-        <div class="inputForm">
-          <input
-            type="text"
-            id="apellidos"
-            name="apellidos"
-            required
-            maxlength="50"
-            pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
-            title="Inserte sus apellidos"
-            placeholder="Escribe tus apellidos"
-          />
-        </div>
+    <div class="inputForm">
+      <input
+        type="text"
+        id="apellidos"
+        name="apellidos"
+        required
+        maxlength="50"
+        pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+        title="Inserte sus apellidos"
+      />
+      <label for="apellidos">Escribe tus apellidos</label>
+    </div>
 
-        <div class="inputForm">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            maxlength="50"
-            title="Inserte un correo electrónico válido"
-            placeholder="Escribe tu correo electrónico"
-          />
-        </div>
+    <div class="inputForm">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        maxlength="50"
+        title="Inserte un correo electrónico válido"
+      />
+      <label for="email">Escribe tu correo electrónico</label>
+    </div>
 
-        <div class="inputForm">
-          <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            maxlength="15"
-            pattern="^[0-9+]{9,15}$"
-            title="Inserte un número de teléfono válido"
-            placeholder="Escribe tu teléfono (opcional)"
-          />
-        </div>
+    <div class="inputForm">
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        maxlength="15"
+        pattern="^[0-9+]{9,15}$"
+        title="Inserte un número de teléfono válido"
+      />
+      <label for="telefono">Escribe tu teléfono (opcional)</label>
+    </div>
 
-        <div class="inputForm">
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            maxlength="25"
-            title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-            placeholder="Crea una contraseña"
-          />
-        </div>
+    <div class="inputForm">
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        maxlength="25"
+        title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+      />
+      <label for="password">Crea una contraseña</label>
+    </div>
 
-        <div class="inputForm">
-          <select id="opcionesSelect" name="busqueda" required>
-            <option value="" disabled selected>¿Cual es tu objetivo?</option>
-            <option value="empleo">Ganar masa muscular</option>
-            <option value="servicios">Perder peso</option>
-            <option value="comunidad">Aumentar resistencia física</option>
-            <option value="aprendizaje">Cuidar mi alimentación</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
+    <div class="inputForm">
+      <select id="opcionesSelect" name="busqueda" required>
+        <option value="" disabled selected>¿Cual es tu objetivo?</option>
+        <option value="empleo">Ganar masa muscular</option>
+        <option value="servicios">Perder peso</option>
+        <option value="comunidad">Aumentar resistencia física</option>
+        <option value="aprendizaje">Cuidar mi alimentación</option>
+        <option value="otro">Otro</option>
+      </select>
+    </div>
 
-        <div class="inputForm">
-          <textarea
-            id="comentarios"
-            name="comentarios"
-            rows="4"
-            maxlength="300"
-            placeholder="¿Algo más que quieras compartir? (opcional)"
-          ></textarea>
-        </div>
+    <div class="inputForm">
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        rows="4"
+        maxlength="300"
+        placeholder="¿Algo más que quieras compartir? (opcional)"
+      ></textarea>
+    </div>
 
-        <div class="recordarCheckbox">
-          <input type="checkbox" id="terminos" name="terminos" required />
-          <label for="terminos">Acepto los términos y condiciones</label>
-        </div>
+    <div class="recordarCheckbox">
+      <input type="checkbox" id="terminos" name="terminos" required />
+      <label for="terminos">Acepto los términos y condiciones</label>
+    </div>
 
-        <div class="recordarCheckbox">
-          <input type="checkbox" id="newsletter" name="newsletter" checked />
-          <label for="newsletter">Deseo recibir newsletter y ofertas</label>
-        </div>
+    <div class="recordarCheckbox">
+      <input type="checkbox" id="newsletter" name="newsletter" checked />
+      <label for="newsletter">Deseo recibir newsletter y ofertas</label>
+    </div>
 
-        <input type="submit" value="REGISTRARSE" />
-      </form>
+    <input type="submit" value="REGISTRARSE" />
+  </form>
+
       <p class="textoForm">
         <span>¿Ya tienes cuenta? <a href="iniciarSesion.html">Inicia sesión</a></span>
       </p>

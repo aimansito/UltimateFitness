@@ -110,6 +110,7 @@ $(function () {
     });
 }); 
 
+// funcion para los inputs
 $(function() {
     $('.inputForm input').each(function() {
         if ($(this).val().trim() !== '') {
