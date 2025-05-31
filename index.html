@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="icon" href="./img/uf.svg" type="image/svg+xml">
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./jq/jquery-3.7.1.min.js"></script>
+    <script src="./jq/jquery.animate-colors-min.js"></script>
+    <script src="./jq/script.js"></script>
+    <title>Ultimate Fitness</title>
+  </head>
+  <body>
+    <header>
+      <nav id="menu-principal">
+        <label for="hamburger">
+          <img src="img/menu.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="hamburger" />
+        <div class="linea"></div>
+        <div id="menu">
+          <label for="hamburger" class="cerrarMenu">X</label>
+          <img class="menu-imagen" src="./img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="./html/servicios.html">SERVICIOS</a></li>
+            <li><a href="./html/gym.html">GYM</a></li>
+            <li><a href="./html/workout.html">WORKOUT</a></li>
+            <li><a href="./html/contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="index.html">
+        <img class="logo-index" src="./img/uf.png" alt="logoINDEX" />
+      </a>
+      <nav id="menu-usuario">
+        <label for="userHamburger">
+          <img src="img/user.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="userHamburger" />
+        <div id="menu-user">
+          <label for="userHamburger" class="cerrarMenuUser">X</label>
+          <img class="menu-imagen" src="./img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="./html/iniciarSesion.html">INICIAR SESIÓN</a></li>
+            <li><a href="./html/crearCuenta.html">CREAR CUENTA</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Parte principal de la página-->
+    <main>
+      <div class="barra-busqueda">
+        <img src="./img/search.svg" alt="search" />
+        <input type="text" id="buscar" placeholder="Buscar..." />
+      </div>
+
+      <div class="imgCentral">
+        <img src="img/imgPrincipal.png" alt="foto-principal" />
+        <a href="./html/crearCuenta.html">CONVIÉRTETE EN ULTIMATE</a>
+        <p>Aqui mostraremos la manera más eficaz de mantenerte en forma</p>
+      </div>
+
+      <section class="novedades">
+        <article class="articulo">
+          <img src="img/portatil.webp" alt="img-servicios" />
+          <h3 class="tituloArticulo">¿QUÉ OFRECEMOS?</h3>
+          <p>
+            Todo lo que tienes que saber y aprender para mantenerte en forma con
+            nuestro método.
+          </p>
+          <a href="./html/servicios.html"><button>SABER MÁS <img src="img/flechaDerecha.svg" alt="flecha"></i></button></a>
+        </article>
+        <article class="articulo">
+          <img src="img/ensalada.webp" alt="img-servicios" />
+          <h3 class="tituloArticulo">DIETA EQUILIBRADA Y VARIADA</h3>
+          <p>
+            Debemos de tener una comida estructurada para llevar a cabo bien
+            nuestro cambio
+          </p>
+          <a href="./html/dieta.html"><button>SABER MÁS <img src="img/flechaDerecha.svg" alt="flecha"></i></button></a>        </article>
+        <article class="articulo">
+          <img src="img/run.webp" alt="img-servicios" />
+          <h3 class="tituloArticulo">DEPORTE AL AIRE LIBRE</h3>
+          <p>Hacer deporte en zonas exteriores tiene diversas ventajas...</p>
+          <a href="./html/workout.html"><button>SABER MÁS <img src="img/flechaDerecha.svg" alt="flecha"></i></button></a>        </article>
+        <article class="articulo">
+          <img src="img/gymw.webp" alt="img-servicios" />
+          <h3 class="tituloArticulo">GYM TRAINING</h3>
+          <p>
+            Esta semana tenemos nuevos ejercicios para implementar en nuestra
+            rutina
+          </p>
+          <a href="./html/gym.html"><button>SABER MÁS <img src="img/flechaDerecha.svg" alt="flecha"></i></button></a>        </article>
+      </section>
+    </main>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA<span><i class="fa fa-sort-asc" aria-hidden="true"></i></span></a></div>
+    <footer>
+      <div class="contenedorFooter">
+        <div class="img-footer">
+          <img src="./img/logo.png" alt="logoFooter" />
+        </div>
+
+        <div class="contenedorIdioma">
+          <img src="./img/translate.svg" alt="traductorLogo"><span>ESP</span>
+        </div>
+
+        <div class="contenedorUbicacion">
+          <img src="./img/ubicacion.svg" alt="locationLogo"><img class="bandera" src="./img/bandera.svg" alt="Icono de bandera">
+        </div>
+        <!--Línea divisoria-->
+        <div class="linea"></div>
+
+        <div class="contactoFooter">
+          <p>Contáctanos</p>
+          <nav class="iconos-sociales">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="textoIconos">Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <span class="textoIconos">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span class="textoIconos">Correo</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <small>Ultimate Fitness Management ©</small>
+        </div>
+        <div class="linea"></div>
+        <div class="cookies">
+          <div class="cookies">
+            <p>
+              <a href="./html/cookies.html">Política de privacidad y cookies</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <div id="fondo-negro"></div>
+
+  <!-- Caja de cookies -->
+  <div id="caja-cookies">
+    <p>Este sitio usa cookies para mejorar tu experiencia.
+      para más información <a class="cookiesEnlace" href="./html/cookies.html">Pulse aquí.</a>
+    </p>
+    <button id="btnAceptarCookies">Aceptar</button>
+    <button id="btnRechazarCookies">Rechazar</button>
+  </div> 
+  </body>
+</html>

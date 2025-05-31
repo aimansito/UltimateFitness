@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+  <link rel="icon" href="../img/uf.svg" type="image/svg+xml">
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../jq/jquery-3.7.1.min.js"></script>
+  <script src="../jq/jquery.animate-colors-min.js"></script>
+  <script src="../jq/script.js"></script>
+  <title>Ultimate Fitness</title>
+</head>
+
+<body>
+  <header>
+    <nav id="menu-principal">
+      <label for="hamburger">
+        <img src="../img/menu.svg" alt="imagen menu" />
+      </label>
+      <input type="checkbox" id="hamburger" />
+      <div class="linea"></div>
+      <div id="menu">
+        <label for="hamburger" class="cerrarMenu">X</label>
+        <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+        <ul>
+          <li><a href="../index.html">INICIO</a></li>
+          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="gym.html">GYM</a></li>
+          <li><a href="workout.html">WORKOUT</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a href="../index.html">
+      <img class="logo-index" src="../img/uf.png" alt="logoINDEX" />
+    </a>
+    <nav id="menu-usuario">
+      <label for="userHamburger">
+        <img src="../img/user.svg" alt="imagen menu" />
+      </label>
+      <input type="checkbox" id="userHamburger" />
+      <div id="menu-user">
+        <label for="userHamburger" class="cerrarMenuUser">X</label>
+        <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+        <ul>
+          <li><a href="../html/iniciarSesion.html">INICIAR SESIÓN</a></li>
+          <li><a href="../html/crearCuenta.html">CREAR CUENTA</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Parte principal de la página-->
+  <main>
+    <h2 class="tituloPagina">CONTACTO</h2>
+    <section class="descContacto">
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque, rutrum metus vivamus nascetur tristique purus
+          fusce cursus, iaculis potenti cum ornare class netus dictumst. Libero est nulla dis nisi sociis vitae etiam,
+          dictumst id bibendum eget inceptos sagittis odio hendrerit, rhoncus varius nostra interdum commodo natoque.
+          Integer lectus diam congue condimentum ullamcorper iaculis felis hendrerit vel, elementum taciti tempor mauris
+          mi fringilla interdum quam nisl proin, malesuada commodo fermentum et cubilia nostra torquent quis.
+        </p>
+      </article>
+    </section>
+    <section class="datosContacto">
+      <h3 class="tituloSeccion">DATOS DE CONTACTO</h3>
+      <ul>
+        <li><strong><img src="../img/tlf.svg" alt=""></i>Teléfono:</strong> +34 666 666 666</li>
+        <li><strong><img src="../img/mail.svg" alt="">Correo Electrónico:</strong> utfitness@gmail.com</li>
+        <li><strong><img src="../img/ubicacion.svg" alt="">Dirección:</strong> C/Terraza Nº1 Estepona, Málaga</li>
+      </ul>
+    </section>
+    <section class="formContacto">
+      <form action="#" method="POST" class="formularioLogin">
+        <div class="inputForm">
+          <input type="text" id="nombre" name="nombre" required autofocus maxlength="25"
+            pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$" title="Inserte su nombre" />
+          <label for="nombre">Escribe tu nombre</label>
+          <div class="mensaje-error">*Campo Obligatorio</div>
+        </div>
+
+        <div class="inputForm">
+          <input type="email" id="email" name="email" required maxlength="50"
+            title="Inserte un correo electrónico válido" />
+          <label for="email">Escribe tu correo electrónico</label>
+          <div class="mensaje-error">*Campo Obligatorio</div>
+          
+        </div>
+
+        <div class="inputForm">
+          <input type="text" id="asunto" name="asunto" maxlength="50" title="Inserte el asunto" />
+          <label for="asunto">Asunto</label>
+          <div class="mensaje-error">*Campo Obligatorio</div>
+        </div>
+
+        <div class="inputForm">
+          <textarea id="comentarios" name="comentarios" rows="4" maxlength="300"
+            title="Déjanos saber los deportes que practicas"></textarea>
+          <label for="comentarios">Déjanos saber los deportes que practicas</label>
+        </div>
+
+        <div class="recordarCheckbox">
+          <input type="checkbox" id="terminos" name="terminos" required />
+          <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+
+        <input type="submit" value="ENVIAR" />
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="contenedorFooter">
+      <div class="img-footer">
+        <img src="../img/logo.png" alt="logoFooter" />
+      </div>
+
+      <div class="contenedorIdioma">
+        <img src="../img/translate.svg" alt="traductorLogo" /><span>ESP</span>
+      </div>
+
+      <div class="contenedorUbicacion">
+        <img src="../img/ubicacion.svg" alt="locationLogo" /><img class="bandera" src="../img/bandera.svg"
+          alt="Icono de bandera" />
+      </div>
+
+      <!--Línea divisoria-->
+      <div class="linea"></div>
+
+      <div class="contactoFooter">
+        <p>Contáctanos</p>
+        <nav class="iconos-sociales">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="textoIconos">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <span class="textoIconos">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                <span class="textoIconos">Correo</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <small>Ultimate Fitness Management ©</small>
+      </div>
+      <div class="linea"></div>
+      <div class="cookies">
+        <p>
+          <a href="./cookies.html">Política de privacidad y cookies</a>
+        </p>
+      </div>
+  </footer>
+  <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc" aria-hidden="true"></i></span></a>
+  </div>
+</body>
+
+</html>

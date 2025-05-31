@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+    <link rel="icon" href="../img/uf.svg" type="image/svg+xml">
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <script src="../jq/jquery-3.7.1.min.js"></script>
+    <script src="../jq/jquery.animate-colors-min.js"></script>
+    <script src="../jq/script.js"></script>
+    <title>Ultimate Fitness</title>
+  </head>
+  <body>
+    <header>
+      <nav id="menu-principal">
+        <label for="hamburger">
+          <img src="../img/menu.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="hamburger" />
+        <div class="linea"></div>
+        <div id="menu">
+          <label for="hamburger" class="cerrarMenu">X</label>
+          <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="gym.html">GYM</a></li>
+            <li><a href="workout.html">WORKOUT</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="../index.html">
+        <img class="logo-index" src="../img/uf.png" alt="logoINDEX" />
+      </a>
+      <nav id="menu-usuario">
+        <label for="userHamburger">
+          <img src="../img/user.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="userHamburger" />
+        <div id="menu-user">
+          <label for="userHamburger" class="cerrarMenuUser">X</label>
+          <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="../html/iniciarSesion.html">INICIAR SESIÓN</a></li>
+            <li><a href="../html/crearCuenta.html">CREAR CUENTA</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Parte principal de la página-->
+    <main>
+      <h2 class="tituloPagina">RESTABLECE TU CONTRASEÑA</h2>
+
+      <form action="#" method="POST" class="formularioLogin">
+        <div class="inputForm">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            maxlength="50"
+            title="Inserte un correo electrónico válido"
+            placeholder="Escribe tu correo electrónico"
+          />
+        </div>
+
+        <div class="inputForm">
+          <input
+            type="password"
+            id="clave"
+            name="clave"
+            required
+            autofocus
+            maxlength="25"
+            pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+            title="Inserte su nombre"
+            placeholder="Escribe tu contraseña"
+          />
+        </div>
+
+        <div class="inputForm">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            maxlength="25"
+            title="La contraseña debe tener al menos 8 caracteres, incluir una mayúscula, una minúscula, un número y un carácter especial."
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            placeholder="Vuelve a escribir la contraseña"
+          />
+        </div>
+
+        <div class="recordarCheckbox">
+          <input type="checkbox" id="terminos" name="terminos" required />
+          <label for="terminos">Guardar credenciales de sesión</label>
+        </div>
+
+        <input type="submit" value="CAMBIAR CONTRASEÑA" />
+      </form>
+    </main>
+    <footer>
+      <div class="contenedorFooter">
+        <div class="img-footer">
+          <img src="../img/logo.png" alt="logoFooter" />
+        </div>
+
+        <div class="contenedorIdioma">
+          <img src="../img/translate.svg" alt="traductorLogo" /><span>ESP</span>
+        </div>
+
+        <div class="contenedorUbicacion">
+          <img src="../img/ubicacion.svg" alt="locationLogo" /><img
+            class="bandera"
+            src="./img/bandera.svg"
+            alt="Icono de bandera"
+          />
+        </div>
+
+        <!--Línea divisoria-->
+        <div class="linea"></div>
+
+        <div class="contactoFooter">
+          <p>Contáctanos</p>
+          <nav class="iconos-sociales">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="textoIconos">Instagram</span>
+              </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <span class="textoIconos">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span class="textoIconos">Correo</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <small>Ultimate Fitness Management ©</small>
+        </div>
+        <div class="linea"></div>
+        <div class="cookies">
+          <p>
+            <a href="./cookies.html">Política de privacidad y cookies</a>
+          </p>
+        </div>
+    </footer>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc" aria-hidden="true"></i></span></a></div>
+  </body>
+</html>

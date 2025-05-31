@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+    <link rel="icon" href="../img/uf.svg" type="image/svg+xml">
+
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos-slider.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../jq/jquery-3.7.1.min.js"></script>
+    <script src="../jq/jquery.animate-colors-min.js"></script>
+    <script src="../jq/script.js"></script>
+    <script src="../jq/slider.js"></script>
+    <title>Ultimate Fitness</title>
+  </head>
+  <body>
+    <header>
+      <nav id="menu-principal">
+        <label for="hamburger">
+          <img src="../img/menu.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="hamburger" />
+        <div class="linea"></div>
+        <div id="menu">
+          <label for="hamburger" class="cerrarMenu">X</label>
+          <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="gym.html">GYM</a></li>
+            <li><a href="workout.html">WORKOUT</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="../index.html">
+        <img class="logo-index" src="../img/uf.png" alt="logoINDEX" />
+      </a>
+      <nav id="menu-usuario">
+        <label for="userHamburger">
+          <img src="../img/user.svg" alt="imagen menu" />
+        </label>
+        <input type="checkbox" id="userHamburger" />
+        <div id="menu-user">
+          <label for="userHamburger" class="cerrarMenuUser">X</label>
+          <img class="menu-imagen" src="../img/uf.png" alt="logoINDEX" />
+          <ul>
+            <li><a href="../html/iniciarSesion.html">INICIAR SESIÓN</a></li>
+            <li><a href="../html/crearCuenta.html">CREAR CUENTA</a></li>
+            <li><a href="#">CERRAR SESIÓN</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Parte principal de la página-->
+    <main>
+        <h2 class="tituloPagina">WORKOUT</h2>
+        <section class="servicios">
+            <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipiscing elit est vehicula curabitur, nisi faucibus venenatis ullamcorper auctor suspendisse sapien maecenas neque fames, dis enim lacus facilisis platea nullam litora placerat mollis. Ut ultricies porta pretium cubilia feugiat ornare rhoncus diam, faucibus consequat orci molestie vitae nullam pellentesque imperdiet, conubia per varius aliquet blandit semper lacinia. Elementum dui feugiat sociosqu viverra erat malesuada ridiculus facilisi, ad scelerisque nascetur cursus volutpat interdum ornare torquent, pellentesque laoreet porttitor vehicula penatibus nostra mi. Feugiat viverra tempor faucibus primis diam sem ante, enim nibh arcu mi eu felis fames aliquet, morbi ligula dignissim parturient cum taciti.
+                </p>
+            </article>
+        </section>
+        <section id="slider" class="contenedor-slider">
+          <ul class="slider-wrapper">
+          <li class="current-slide">
+            <img src="../img/litoralSlider.webp" alt="litoralFoto" width="640" height="419">
+      
+            <div class="caption">
+              <h2 class="slider-title">¡CORRE Y DESCONECTA!</h2>
+              <p>En vez de correr sobre una cinta eléctrica sal a correr a un lugar que además de despejarte que tenga aire fresco</p>
+            </div>
+          </li>
+      
+          <li>
+            <img src="../img/barrasSlider.webp" alt="barrasFoto">
+      
+            <div class="caption">
+              <h2 class="slider-title">¡ENTRENA Y DISFRUTA DEL SOL!</h2>
+              <p>Una alternativa a la hipertrofia tenemos la calistenia, entrena al aire libre usando tu propio peso.</p>
+            </div>
+          </li>
+      
+          <li>
+            <img src="../img/biciSlider.webp" title="bicicleta" alt="BiciFoto">
+      
+            <div class="caption">
+              <h2 class="slider-title">PRÁCTICA OTROS DEPORTES</h2>
+              <p>Ejercita tu cuerpo pero de distinta forma, ya sea haciendo bicicleta, o cualquier otro deporte.</p>
+            </div>
+          </li>
+      
+          <li>
+            <img src="../img/senderismoSlider.webp" title="senderismo" alt="senderismoFoto">
+      
+            <div class="caption">
+              <h2 class="slider-title">CAMINA Y DESCUBRE</h2>
+              <p>Te damos a la alcance de tu mano distintas rutas de senderismo desde el nivel más bajo hasta el más atrevido.</p>
+            </div>
+          </li>
+          </ul>
+          <!-- Sombras -->
+          <div class="slider-shadow"></div>
+          
+          <!-- Controles de Navegacion -->
+          <ul id="control-buttons" class="control-buttons">
+            <!--<li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>-->
+          </ul>
+        </section>
+    </main>
+    <footer>
+      <div class="contenedorFooter">
+        <div class="img-footer">
+          <img src="../img/logo.png" alt="logoFooter" />
+        </div>
+
+        <div class="contenedorIdioma">
+          <img src="../img/translate.svg" alt="traductorLogo" /><span>ESP</span>
+        </div>
+
+        <div class="contenedorUbicacion">
+          <img src="../img/ubicacion.svg" alt="locationLogo" /><img
+            class="bandera"
+            src="../img/bandera.svg"
+            alt="Icono de bandera"
+          />
+        </div>
+
+        <!--Línea divisoria-->
+        <div class="linea"></div>
+
+        <div class="contactoFooter">
+          <p>Contáctanos</p>
+          <nav class="iconos-sociales">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="textoIconos">Instagram</span>
+              </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+                  <span class="textoIconos">Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span class="textoIconos">Correo</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <small>Ultimate Fitness Management ©</small>
+        </div>
+        <div class="linea"></div>
+        <div class="cookies">
+          <p>
+            <a href="./cookies.html">Política de privacidad y cookies</a>
+          </p>
+        </div>
+    </footer>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc" aria-hidden="true"></i></span></a></div>
+  </body>
+</html>
